@@ -10,12 +10,12 @@ def fibonacci_iterative(num)
 end
 
 module Fib
-  @@mem = {}
+  @@memo = {}
   def self.compute(num)
     if num <= 1
       return num
     else
-      @@mem[num] ||= compute(num-1) +  compute(num-2)
+      @@memo[num] ||= compute(num-1) +  compute(num-2)
     end
   end
 end
