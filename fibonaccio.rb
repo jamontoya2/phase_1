@@ -11,11 +11,11 @@ end
 
 module Fib
   @@mem = {}
-  def self.compute(index)
-    if index <= 1
-      return index
+  def self.compute(num)
+    if num <= 1
+      return num
     else
-      @@mem[index] ||= compute(index-1) +  compute(index-2)
+      @@mem[num] ||= compute(num-1) +  compute(num-2)
     end
   end
 end
