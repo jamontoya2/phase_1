@@ -23,34 +23,34 @@ def fichas(hash)
   (array + second).flatten
 end
 
-# fichass = fichas(hash)
-# p fichass
+fichass = fichas(hash)
+p fichass
 
-# def peones(hash)
-#   array = []
-#   hash.each { |key, value| 
-#     if key == 6 
-#       8.times do array << ("#{value}") end
-#     end
-#   }
-#   array
-# end
+def peones(hash)
+  array = []
+  hash.each { |key, value| 
+    if key == 6 
+      8.times do array << ("#{value}") end
+    end
+  }
+  array
+end
 
-# p peones(hash)
+p peones(hash)
 
-# def casillas(hash)
-#   array = []
-#   hash.each { |key, value|
-#     if key == 7 
-#       array << ("#{value}") 
-#     elsif key == 8   
-#       array << ("#{value}") 
-#     end
-#   }
-#   array*4
-# end
+def casillas(hash)
+  array = []
+  hash.each { |key, value|
+    if key == 7 
+      array << ("#{value}") 
+    elsif key == 8   
+      array << ("#{value}") 
+    end
+  }
+  array*4
+end
 
-# p casillas(hash)
+p casillas(hash)
 
 
 def chess_maker

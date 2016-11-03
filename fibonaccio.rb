@@ -10,7 +10,7 @@ def fibonacci_iterative(num)
 end
 
 module Fib
-  @@memo = {}
+  @@mem = {}
   def self.compute(num)
     if num <= 1
       return num
