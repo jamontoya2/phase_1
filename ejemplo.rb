@@ -11,19 +11,5 @@ var = 0
 end
 
 10000.times do |variable|
-p (cat == 40) ? "bingo" : "No bingo"
+ p (cat == 40) ? "bingo" : "No bingo"
 end
-
-
-
-
- 
-
-
-
-
-  
-
-
-
-

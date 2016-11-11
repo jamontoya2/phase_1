@@ -8,9 +8,6 @@ alum_5 = ["Pablo Moran",11,"Masculino","Segundo",[7, 8, 9, 9, 8]]
 table  << titles << alum_1 << alum_2 << alum_3 << alum_4 << alum_5    
 p table 
 
-
-
-
 p table[0][4]  == "Calificaciones"
 p table[2][1]  == 12
 p table[2][2]  == "Femenino"

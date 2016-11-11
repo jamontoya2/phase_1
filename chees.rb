@@ -13,9 +13,28 @@ def cheess
        end 
       end
     end
-array.each_slice(8).to_a
+ #array.each_slice(8).to_a
+ array[0..7].each {|item| printf("%-15s", "#{item}")}
+ printf "\n"
+ array[8..15].each {|item| printf("%-15s", "#{item}")}
+ printf "\n"
+ array[16..23].each {|item| printf("%-15s", "#{item}")}
+ printf "\n"
+ array[24..31].each {|item| printf("%-15s", "#{item}")}
+ printf "\n"
+ array[32..39].each {|item| printf("%-15s", "#{item}")}
+ printf "\n"
+ array[40..47].each {|item| printf("%-15s", "#{item}")}
+ printf "\n"
+ array[48..55].each {|item| printf("%-15s", "#{item}")}
+ printf "\n"
+ array[56..63].each {|item| printf("%-15s", "#{item}")}
+ printf "\n"
+    
+    
+  
 end
- p cheess
+cheess
 # ==[["Torre-N", "Caballo-N", "Alfil-N", "Rey-N", "Reina-N", "Alfil-N", "Caballo-N", "Torre-N"],
 #            ["Peón-N", "Peón-N", "Peón-N", "Peón-N", "Peón-N", "Peón-N", "Peón-N", "Peón-N"],
 #            ["Blanco", "Negro", "Blanco", "Negro", "Blanco", "Negro", "Blanco", "Negro"],

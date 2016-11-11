@@ -1,4 +1,21 @@
-table = [] 
+def pig_latin(text)
+  new_array = text.split(" ")
+  new_array.collect! do |word|
+    if word[0] =~ (/[aeiou]/)
+    word + "way"
+    else
+       i = word.index(/[aeiou]/)
+       cons = word[0..i-1]
+       word[i..-1] + cons + "ay"
+    end
+  end
+  new_array.join(" ")
+end
+p pig_latin("armando montoya montoya")
+
+
+
+able = [] 
 titles = ["nombre","edad","genero","grupo","Calificaciones"]
 alum_1 = ["Rodrigo García",13,"Masculino","Primero",[9,9,7,6,8]]
 alum_2 = ["Fernanda Gonzalez",12,"Femenino","Tercero",[6, 9, 8, 6, 8]]
