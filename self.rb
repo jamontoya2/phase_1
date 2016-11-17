@@ -1,4 +1,4 @@
-$hatched_hours = 0
+#$hatched_hours = 0
 
 class LayingHen
 
